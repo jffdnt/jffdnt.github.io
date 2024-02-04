@@ -1,0 +1,506 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "spacing": "None",
+            "style": "default",
+            "items": [
+                {
+                    "type": "Image",
+                    "id": "f66b68e7-97e2-1f0e-6ecc-c71635bfbee3",
+                    "url": "https://raw.githubusercontent.com/jffdnt/jffdnt.github.io/55945d671d662a44200951664cf29c10d0b973ba/header.jpg",
+                    "size": "Stretch"
+                }
+            ],
+            "padding": "Default"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Container",
+                    "id": "0381f5a5-8db5-137c-93d6-a0f3521d57f2",
+                    "padding": "None",
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "id": "c3bd4dbf-add8-3bdd-f6cf-7d7c36f73937",
+                            "padding": "None",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "text": "Vehicle Wrap Survey",
+                                    "wrap": true,
+                                    "spacing": "ExtraLarge"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TextBlock",
+                            "id": "cbef686e-8f5c-78b9-7b89-aa1a39b7fd0e",
+                            "text": "Hello J. Doe, \n\nAT&T's Fleet Team is simplifying our branding catalogue. As part of this process, we'd like to verify our wrap records. \n\nPlease use the buttons below to confirm your:\n\n•\tVehicle's number\n\n•\tVehicle's wrap\n\nThank you for all the ways you continue to connect people to greater possibility. We look forward to serving you!\n",
+                            "wrap": true,
+                            "spacing": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "FactSet",
+                    "id": "3beba48c-d67a-9584-d42f-c9a46e5a8b74",
+                    "facts": [
+                        {
+                            "title": "User's Name",
+                            "value": "J. Doe"
+                        },
+                        {
+                            "title": "User's Email",
+                            "value": "ab1234@att.com"
+                        },
+                        {
+                            "title": "Vehicle Number",
+                            "value": "55-55555"
+                        }
+                    ],
+                    "spacing": "Medium"
+                },
+                {
+                    "type": "Container",
+                    "id": "7e909564-1f2a-4011-8cdf-39e71faeced9",
+                    "padding": "None",
+                    "items": [
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.ToggleVisibility",
+                                    "title": "Select wrap",
+                                    "targetElements": [
+                                        "Row0",
+                                        "Row1",
+                                        "Row2",
+                                        "Row3",
+                                        "Row4"
+                                    ]
+                                },
+                                {
+                                    "type": "Action.ToggleVisibility",
+                                    "title": "Edit vehicle number",
+                                    "targetElements": [
+                                        "VehicleNumberHeader",
+                                        "VehicleNumberTitle",
+                                        "VehicleNumberInput"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "padding": "Default",
+            "spacing": "None",
+            "separator": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "id": "Row0",
+                    "text": "Select your vehicle's wrap",
+                    "wrap": true,
+                    "size": "Large",
+                    "weight": "Bolder",
+                    "spacing": "Large",
+                    "isVisible": false
+                },
+                {
+                    "type": "ColumnSet",
+                    "id": "Row1",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "id": "2c2da82f-cee5-93dd-1280-d1a36c00d69c",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "c949b6f5-a19e-0bdd-9ec5-e1692db1ae31",
+                                    "url": "https://raw.githubusercontent.com/jffdnt/jffdnt.github.io/main/9ebfedab-7933-41a3-ad21-6edcf5ecc7c3.jpg",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ],
+                                        "id": "EvoSwo",
+                                        "title": "EvolutionSwoosh"
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input1",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Evolution Swoosh",
+                                            "value": "Evolution Swoosh"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "id": "59c4633b-3a6b-176c-bf2a-f79bf684fd94",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "fa863f18-814e-f211-32e8-1482a84ce0fc",
+                                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/42a72a83-ee2d-4781-939c-69328e1819e8.jpg?raw=true",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input2",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Corporate Logo",
+                                            "value": "Corporate Logo"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        }
+                    ],
+                    "padding": "None",
+                    "spacing": "ExtraLarge",
+                    "isVisible": false
+                },
+                {
+                    "type": "ColumnSet",
+                    "id": "Row2",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "id": "286bee46-7f7a-575d-91a6-0e7e0456904f",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "2a5a7483-266c-54f5-4b80-cf18dec0d31d",
+                                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/05cc2ac6-5d08-49aa-ad04-81b7ebc3d26e.jpg?raw=true",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input3",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Expressive Globe",
+                                            "value": "Expressive Globe"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "id": "d84f3b0f-de8c-b68b-1c13-e2b46c3c87a4",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "6537f6d8-b6ce-61e6-5f07-555de02bf6e7",
+                                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/9f507bcb-4795-49fc-b328-b47af3c9eece.jpg?raw=true",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input4",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Reflective Globe",
+                                            "value": "Reflective Globe"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        }
+                    ],
+                    "padding": "None",
+                    "spacing": "ExtraLarge",
+                    "isVisible": false
+                },
+                {
+                    "type": "ColumnSet",
+                    "id": "Row3",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "id": "88bd6784-73e6-4195-3b29-1401d9cb26c3",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "fd13994c-8784-14ee-a716-e521d52ed1b8",
+                                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/77e4bd65-8d28-4da2-a535-9f2fb0c59551.jpg?raw=true",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input5",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Fiber",
+                                            "value": "Fiber"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "id": "3b14858a-5dbf-f617-587c-635638a3bea6",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "8b5b00d6-fc23-8cdb-9f36-e7141ddfa2c4",
+                                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/51ffa4ad-6de0-41eb-8b29-13ebb00d4bbd.jpg?raw=true",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input6",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Fiber Lifestyle",
+                                            "value": "Fiber Lifestyle"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        }
+                    ],
+                    "padding": "None",
+                    "spacing": "ExtraLarge",
+                    "isVisible": false
+                },
+                {
+                    "type": "ColumnSet",
+                    "id": "Row4",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "id": "d6fca48b-cd1a-225a-fb0b-d1663b0cbf44",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "9e7ff4a3-d5a1-77a3-c0a6-3da95111781a",
+                                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/2b72fea3-f59e-4ecb-865b-0a00b2801a9d.jpg?raw=true",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input7",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Uverse",
+                                            "value": "Uverse"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "id": "c00fddba-db1a-7675-03c2-6173f92bcdf7",
+                            "padding": "None",
+                            "width": 50,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "id": "a6168397-e987-bda6-22f8-828391c15d22",
+                                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/9be5af1c-0ba5-453d-9281-b497af92d3ea.jpg?raw=true",
+                                    "horizontalAlignment": "Left",
+                                    "size": "Medium",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "targetElements": [
+                                            {
+                                                "elementId": "SubmitContainer",
+                                                "isVisible": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "input8",
+                                    "placeholder": "Please select a value",
+                                    "choices": [
+                                        {
+                                            "title": "Other",
+                                            "value": "Other"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        }
+                    ],
+                    "padding": "None",
+                    "spacing": "ExtraLarge",
+                    "isVisible": false
+                },
+                {
+                    "type": "TextBlock",
+                    "id": "VehicleNumberHeader",
+                    "text": "Edit your vehicle's number",
+                    "wrap": true,
+                    "size": "Large",
+                    "weight": "Bolder",
+                    "spacing": "Large",
+                    "isVisible": false
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "VehicleNumberInput",
+                    "placeholder": "Enter text here",
+                    "value": "55-55555",
+                    "isVisible": false
+                },
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.Http",
+                            "title": "Submit",
+                            "method": "POST",
+                            "url": "https://prod-61.westus.logic.azure.com:443/workflows/aec8e3c042334e998a109ed85936a0cd/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mMnAv07tvB5lESpcgWZKEtEBmI6A5ZPctNlsNXzsUpQ",
+                            "body": "{\"input1\": \"{{input1.value}}\", \"input2\":\"{{input2.value}}\", \"input3\":\"{{input3.value}}\", \"input4\":\"{{input4.value}}\", \"input5\":\"{{input5.value}}\", \"input6\":\"{{input6.value}}\", \"input7\":\"{{input7.value}}\",\"input8\":\"{{input8.value}}\",\"VehicleNumberInput\":\"{{VehicleNumberInput.value}}\",\"FileID\":\"\",\"Vehicle Number\":\"\"}",
+                            "isPrimary": true,
+                            "style": "positive",
+                            "headers": [
+                                {
+                                    "name": "Content-Type",
+                                    "value": "application/json"
+                                },
+                                {
+                                    "name": "authorization"
+                                }
+                            ],
+                            "id": "SubmitButton"
+                        }
+                    ],
+                    "isVisible": false,
+                    "id": "SubmitContainer"
+                }
+            ],
+            "padding": {
+                "top": "Small",
+                "bottom": "Default",
+                "left": "Default",
+                "right": "Default"
+            },
+            "spacing": "None"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "padding": "None",
+    "originator": "44e29a43-7c16-4af9-a038-be55db841347",
+    "hideOriginalbody": "true",
+    "@type": "AdaptiveCard",
+    "@context": "http://schema.org/extensions"
+}
