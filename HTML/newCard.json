@@ -1,0 +1,264 @@
+{ "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "default",
+            "items": [
+                {
+                    "type": "Image",
+                    "id": "79b86f9e-2b82-d047-3280-5201f795c300",
+                    "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/VehicleReservations.png?raw=true"
+                }
+            ],
+            "padding": "Default",
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "separator": true,
+            "items": [
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "id": "55109fab-59c9-a4ce-fb8e-1963fe04a549",
+                            "text": "End your AT&T Shared Vehicle Reservation",
+                            "wrap": true,
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "spacing": "ExtraLarge"
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "items": [
+                                        {
+                                            "type": "Image",
+                                            "horizontalAlignment": "Center",
+                                            "url": "https://github.com/jffdnt/jffdnt.github.io/blob/main/ChevyTahoe.jpg?raw=true",
+                                            "size": "Medium"
+                                        },
+                                        {
+                                            "type": "ActionSet",
+                                            "actions": [
+                                                {
+                                                    "type": "Action.ToggleVisibility",
+                                                    "id": "5f09a663-6092-eec1-cf70-7d01ee7cc329",
+                                                    "title": "Details",
+                                                    "targetElements": [
+                                                        "9f92228b-ff84-3233-76de-5030945d02f6"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "width": "auto",
+                                    "padding": "None"
+                                },
+                                {
+                                    "type": "Column",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "weight": "Bolder",
+                                            "text": "",
+                                            "wrap": true
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "spacing": "None",
+                                            "color": "Light",
+                                            "text": "",
+                                            "wrap": true,
+                                            "size": "Small"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "spacing": "None",
+                                            "color": "Light",
+                                            "text": "",
+                                            "wrap": true,
+                                            "size": "Small"
+                                        }
+                                    ],
+                                    "width": "auto",
+                                    "padding": "None"
+                                }
+                            ],
+                            "padding": "None"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "id": "b62d86b6-c14b-3ff1-7a9a-52ec08360edb",
+                            "wrap": true,
+                            "text": "     "
+                        }
+                    ],
+                    "padding": "None"
+                },
+                {
+                    "type": "Container",
+                    "id": "9f92228b-ff84-3233-76de-5030945d02f6",
+                    "padding": "None",
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "id": "105b5da3-b129-6ba3-f414-0fa914b10268",
+                            "facts": [
+                                {
+                                    "title": "Pickup Date:",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Pickup Location:",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Dropoff Date:",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Dropoff Location:",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Created By:",
+                                    "value": ""
+                                },
+                                {
+                                    "title": "Key Lock-Box Code",
+                                    "value": "Test123"
+                                }
+                            ]
+                        }
+                    ],
+                    "isVisible": false
+                }
+            ],
+            "padding": {
+                "top": "Default",
+                "bottom": "None",
+                "left": "Default",
+                "right": "Default"
+            },
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "id": "0d0bbeda-6949-44b8-5179-e303ca2b1ea1",
+            "padding": "Default",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "id": "7f708481-c284-3a8c-33de-c2550649845c",
+                    "text": "Click the \"Return Vehicle\" button below to confirm this vehicle has been returned to the pick-up location.",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "id": "fc89dd1a-1cd5-4522-87a4-cf3b5b5283f7",
+                    "text": "Confirmation of vehicle return is required.",
+                    "wrap": true,
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "id": "c760b896-f474-230f-80b7-2eb59a1440e2",
+                    "text": "Once \"Return Vehicle\" is selected:\n\n• The reservation is closed and cannot be restored.\n\n• The vehicle becomes available for others to reserve.\n\n",
+                    "wrap": true
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "id": "466ee0a4-b5ba-520e-0b5d-53841fffe66e",
+            "padding": "Default",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.ShowCard",
+                            "title": "Return Vehicle",
+                            "card": {
+                                "type": "AdaptiveCard",
+                                "body": [
+                                    {
+                                        "type": "ActionSet",
+                                        "actions": [
+                                            {
+                                                "type": "Action.Http",
+                                                "title": "Confirm - Return Vehicle",
+                                                "method": "POST",
+                                                "url": "https://prod-74.westus.logic.azure.com:443/workflows/915c3d4215604d15a9dd87be14d9b537/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=KkGR1vJxQMrwnTEaeaUxoteW6_HAXOjnikAu8y-zT2U",
+                                                "body": "Vehicle returned",
+                                                "headers": [
+                                                    {
+                                                        "name": "Content-Type",
+                                                        "value": "Content-Type"
+                                                    },
+                                                    {
+                                                        "name": "authorization",
+                                                        "vale": ""
+                                                    }
+                                                ],
+                                                "id": "ReturnVehicle"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                                "padding": "None"
+                            },
+                            "style": "positive",
+                            "isPrimary": true
+                        },
+                        {
+                            "type": "Action.ShowCard",
+                            "title": "Extend Reservation - 1 day",
+                            "card": {
+                                "type": "AdaptiveCard",
+                                "body": [
+                                    {
+                                        "type": "ActionSet",
+                                        "actions": [
+                                            {
+                                                "type": "Action.Http",
+                                                "title": "Confirm - Extend Reservation - 1 day",
+                                                "method": "POST",
+                                                "url": "https://prod-74.westus.logic.azure.com:443/workflows/915c3d4215604d15a9dd87be14d9b537/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=KkGR1vJxQMrwnTEaeaUxoteW6_HAXOjnikAu8y-zT2U",
+                                                "body": "Reservation Extended",
+                                                "headers": [
+                                                    {
+                                                        "name": "Content-Type",
+                                                        "value": "Content-Type"
+                                                    },
+                                                    {
+                                                        "name": "authorization",
+                                                        "vale": ""
+                                                    }
+                                                ],
+                                                "id": "eef7f620-5d26-a3a4-555c-33e2f23d7419"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                                "padding": "None"
+                            }
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ],
+            "spacing": "None"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "padding": "None",
+    "originator": "8e0f3b59-cb10-44ca-bfef-ffb9210ce4d7"}
